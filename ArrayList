@@ -1,0 +1,214 @@
+
+
+1. Java program to create an ArrayList of integers
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayList {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+
+        System.out.println("ArrayList: " + numbers);
+    }
+}
+
+2. Java program to add an element to the end of an ArrayList
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AddToEndE {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        
+        int newElement = 4;
+        numbers.add(newElement);
+
+        System.out.println("Updated ArrayList: " + numbers);
+    }
+}
+
+
+3. Java program to add an element to the beginning of an ArrayList
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AddToBeginning {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+
+        int newElement = 1;
+        numbers.add(0, newElement);
+
+        System.out.println("Updated ArrayList: " + numbers);
+    }
+}
+```
+
+4. Java program to add an element at a specified index in an ArrayList
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AddAtIndex {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(4);
+
+        int newElement = 3;
+        int index = 2;
+        numbers.add(index, newElement);
+
+        System.out.println("Updated ArrayList: " + numbers);
+    }
+}
+```
+
+5. Java program to remove the first element from an ArrayList:
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class RemoveFirstElementExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+
+        numbers.remove(0);
+
+        System.out.println("Updated ArrayList: " + numbers);
+    }
+}
+```
+
+6. Java program to remove the last element from an ArrayList
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RemoveLastElement {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+
+        int lastIndex = numbers.size() - 1;
+        numbers.remove(lastIndex);
+
+        System.out.println("Updated ArrayList: " + numbers);
+    }
+}
+```
+
+7. Java program to remove an element at a specified index from an ArrayList
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class RemoveAtIndex {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+
+        int indexToRemove = 2;
+        numbers.remove(indexToRemove);
+
+        System.out.println("Updated ArrayList: " + numbers);
+    }
+    }
+    8. Java program to get the size of an ArrayList
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListSizeExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+
+        int size = numbers.size();
+
+        System.out.println("Size of ArrayList: " + size);
+    }
+}
+
+
+9. Java program to check if an element exists in an ArrayList
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CheckElementExistence {
+    public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+
+        int targetElement = 3;
+
+        boolean exists = numbers.contains(targetElement);
+
+        if (exists) {
+            System.out.println("Element " + targetElement + " exists in the ArrayList.");
+        } else {
+            System.out.println("Element " + targetElement + " does not exist in the ArrayList.");
+        }
+    }
+}
+```
+
+10. Java program to iterate through all the elements in an ArrayList
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class IterateArrayListExample {
+    public static void main(String[] args) {
+        List<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+        fruits.add("Mango");
+
+        System.out.println("Iterating through ArrayList using enhanced for loop:");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+
+        System.out.println("Iterating through ArrayList using traditional for loop:");
+        for (int i = 0; i < fruits.size(); i++) {
+            System.out.println(fruits.get(i));
+        }
+    }
+}
